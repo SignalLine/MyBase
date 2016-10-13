@@ -37,7 +37,6 @@ import com.rilin.lzy.mybase.my.Win8ProActivity;
 import com.rilin.lzy.mybase.my.tv_vitamio.TVHomeActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
-
     private Button mButton,mButton2,mButton3,
                 mButton4,mButton5,mButton6,
                 mButton7,mButton8,mButton9,
