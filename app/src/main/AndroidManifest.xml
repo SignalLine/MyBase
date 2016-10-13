@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.rilin.lzy.mybase">
+
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- wifi权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- 模拟心率 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.Camera"/>
+
+    <!-- vitamio视频直播 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- timerservice -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <!-- 麦克风权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- 指南针 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--
+      - Include all the "features" under the camera permission,
+      - and mark them all as optional.
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".my.BottomSheetActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.MyScrollActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.PinnerListViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.PhotoActivity"
+            android:label="@string/title_activity_patient"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <!-- 需要在配置清单中声明 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity
+            android:name=".my.SimpleLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.FrescoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.FloatButtonActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.UserInfoListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.UserEditActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.RecyclerUserActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.NotifyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.ProgressAcitivty"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.CustomActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.DatePickActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.CircleMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.alarm_timer.AlarmActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <!--
+              闹钟的提醒的广播
+            android:process=":remote"，代表在应用程序里，当需要该service时，会自动创建新的进程。
+            而如果是android:process="remote"，没有“:”分号的，则创建全局进程，不同的应用程序共享该进程。
+        -->
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.zhouya.hh.ACTION_99"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".my.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.ObservableActivity"
+            android:label="@string/title_activity_flexiblespacewithimagescrollview"
+            android:theme="@style/AppTheme.Toolbar">
+        </activity>
+        <activity
+            android:name=".my.ParallaxToolbarScrollviewActivity"
+            android:label="@string/title_activity_parallaxtoolbarscrollview"
+            android:theme="@style/AppTheme.Toolbar">
+        </activity>
+        <activity android:name=".my.PopupActivity">
+        </activity>
+        <activity android:name=".my.Win8ProActivity">
+        </activity>
+        <activity
+            android:name=".my.HeartBomActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".my.NetStatesActivity">
+        </activity>
+
+        <service
+            android:name=".service.ReceiveNetMsgService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <activity android:name=".my.ObserverActivity">
+        </activity>
+        <activity
+            android:name=".my.tv_vitamio.TVHomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <!-- 播放视频 -->
+        <activity
+            android:name=".my.tv_vitamio.VideoPlayerActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:process=":vitamio"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="http"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="rtsp"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="rtmp"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="udp"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="tcp"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="file"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="content"/>
+                <data
+                    android:mimeType="audio/*"
+                    android:scheme="mms"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="http"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="rtsp"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="rtmp"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="udp"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="tcp"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="file"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="content"/>
+                <data
+                    android:mimeType="video/*"
+                    android:scheme="mms"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:mimeType="application/x-mpegurl"/>
+                <data android:mimeType="application/vnd.apple.mpegurl"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:mimeType="application/x-mpegurl"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="rtsp"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="tcp"/>
+                <data android:scheme="udp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SENDTO"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="application/sdp"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="http"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="tcp"/>
+                <data android:scheme="udp"/>
+                <data android:scheme="gopher"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="tcp"/>
+                <data android:scheme="udp"/>
+                <data android:scheme="gopher"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.avi"/>
+                <data android:pathPattern=".*\\.asf"/>
+                <data android:pathPattern=".*\\.f4v"/>
+                <data android:pathPattern=".*\\.flv"/>
+                <data android:pathPattern=".*\\.mkv"/>
+                <data android:pathPattern=".*\\.mpeg"/>
+                <data android:pathPattern=".*\\.mpg"/>
+                <data android:pathPattern=".*\\.mov"/>
+                <data android:pathPattern=".*\\.rm"/>
+                <data android:pathPattern=".*\\.vob"/>
+                <data android:pathPattern=".*\\.wmv"/>
+                <data android:pathPattern=".*\\.ts"/>
+                <data android:pathPattern=".*\\.tp"/>
+                <data android:pathPattern=".*\\.m3u"/>
+                <data android:pathPattern=".*\\.m3u8"/>
+                <data android:pathPattern=".*\\.m4v"/>
+                <data android:pathPattern=".*\\.mp4"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".my.tv_vitamio.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".my.lunbo.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash.Fullscreen">
+        </activity>
+        <activity
+            android:name=".my.lunbo.ListWithHeadActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.lunbo.ShowADActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".my.GreenDaoActivity">
+        </activity>
+        <!--  -->
+        <activity
+            android:name=".my.alarm_timer.TimerSchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <service
+            android:name=".service.TimerService"
+            android:exported="false"
+            android:process=":remote"
+            android:theme="@style/CustomDialog">
+            <intent-filter>
+                <action android:name="com.rilintech.hxk_301.service.AlarmService"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.TimerReceiver"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter android:priority="10000">
+                <action android:name="com.rilintech.hxk_301.service.AlarmReceiver"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.BootReceiver"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <!--  -->
+        <activity
+            android:name=".my.alarm_timer.ClockInfoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.DraggActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.VoiceActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".my.CompassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity android:name=".my.UpdateAppActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.rilin.lzy.mybase"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//greenDao
+sourceSets{
+    main{
+        java.srcDirs = ['src/main/java','src/main/java-gen']
+    }
+}
+
+//解决bufferKnife中空指针e问题,升级导致的
+//buildscript{
+//    repositories{
+//        mavenCentral()
+//    }
+//    dependencies{
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+//    }
+//}
+//apply plugin: 'com.needbedankt.android-apt'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':DatePicker')
+    //    系统菜单栏设置颜色
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.bigkoo:svprogresshud:1.0.2'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.jude:utils:1.1.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'cn.qqtheme.framework:WheelPicker:1.2.1'
+    compile 'cn.qqtheme.framework:FilePicker:1.2.1'
+    compile 'cn.qqtheme.framework:ColorPicker:1.2.1'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //    observableScrollview
+    compile 'com.melnykov:floatingactionbutton:1.0.7'
+    compile 'me.iwf.photopicker:PhotoPicker:0.2.9@aar'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.facebook.fresco:fresco:0.13.0'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    //    guide引导页---必须依赖
+    compile 'cn.bingoogolapple:bga-banner:2.0.9@aar'
+    compile 'com.android.support:support-v4:24.2.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //      guide引导页--演示使用
+
+    //    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.0@aar'
+    //    greendao
+    compile 'de.greenrobot:greendao:2.1.0'
+
+    //自动检测更新
+    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+}

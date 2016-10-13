@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".my.alarm_timer.TimerSchActivity">
+
+    <RelativeLayout
+        android:background="@drawable/clock_bg_bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.rilin.lzy.mybase.view.MyAnalogClock
+            android:id="@+id/clock"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"/>
+
+        <LinearLayout
+            android:paddingRight="25dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!-- 要求版本最低17 -->
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/clock_line"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="2100/12/31"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="闹钟"
+            android:textColor="@color/c666"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/add_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:onClick="onClick"
+            android:text="添加闹钟"
+            android:textColor="@color/theme_background"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/c666"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/clock_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffcdcdcd"
+            android:dividerHeight="1px" />
+
+    </LinearLayout>
+
+</LinearLayout>

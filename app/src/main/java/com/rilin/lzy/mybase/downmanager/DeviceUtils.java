@@ -1,0 +1,47 @@
+package com.rilin.lzy.mybase.downmanager;
+
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+
+/**
+ * Created by rilintech on 16/10/13.
+ */
+public class DeviceUtils {
+    /**
+     * 获取应用签名
+     * @param context
+     * @return
+     */
+    public static String getVersionName(Context context){
+        String versionName = null;
+
+        try {
+            //获取包管理者
+            PackageManager pm = context.getPackageManager();
+            //获取packageInfo
+            PackageInfo info = pm.getPackageInfo(context.getPackageName(), 0);
+            //获取versionName
+            versionName = info.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return versionName;
+    }
+
+    public static int getVersionCode(Context context){
+        int versionCode = 0;
+        try {
+            //获取包管理者
+            PackageManager pm = context.getPackageManager();
+            //获取packageInfo
+            PackageInfo info = pm.getPackageInfo(context.getPackageName(), 0);
+            //获取versionCode
+            versionCode = info.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return versionCode;
+    }
+}

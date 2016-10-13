@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.rilin.lzy.mybase.my.FloatButtonActivity">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/ziti">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#00000000"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="列表"
+                            android:textColor="#666666"
+                            android:textSize="17dp"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:id="@+id/patient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <android.support.v7.widget.SearchView
+                            android:id="@+id/id_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="0dp"
+                            android:icon="@mipmap/img_search"/>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="FloatActionButton的使用"/>
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/float_btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                fab:fab_addButtonColorNormal="#f36c3f"
+                fab:fab_colorNormal="#ffb629"
+                fab:fab_colorPressed="#FF7A6C"
+                fab:fab_icon="@mipmap/add"
+                fab:fab_labelStyle="@style/menu_labels_style"
+                >
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#49d1ae"
+                    fab:fab_colorPressed="#FF7A6C"
+                    fab:fab_icon="@mipmap/hongdong"
+                    fab:fab_title="互动"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#46b7d2"
+                    fab:fab_colorPressed="#FF7A6C"
+                    fab:fab_icon="@mipmap/yibiaopan"
+                    fab:fab_title="仪表盘"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_colorNormal="#e59e06"
+                    fab:fab_colorPressed="#FF7A6C"
+                    fab:fab_icon="@mipmap/patient_add"
+                    fab:fab_title="添加患者"/>
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        </FrameLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="16dp"
+            fab:fab_colorNormal="#e59e06"
+            fab:fab_colorPressed="#FF7A6C"
+            fab:fab_icon="@mipmap/patient_add"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#eeeeee"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/layout_header"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/itemicon_selector"
+        app:itemTextColor="@drawable/itemicon_selector"
+        app:menu="@menu/nav_menu"
+        />
+</android.support.v4.widget.DrawerLayout>

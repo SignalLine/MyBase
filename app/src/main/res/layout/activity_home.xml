@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.rilin.lzy.mybase.my.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/home_tab_bar"
+        android:background="#f00"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/home_tab_home1"
+            style="@style/MainTabItem"
+            android:text="一"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="3dp"
+            />
+
+        <RadioButton
+            android:id="@+id/home_tab_home2"
+            style="@style/MainTabItem"
+            android:text="二"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="3dp"
+            />
+
+        <RadioButton
+            android:id="@+id/home_tab_home3"
+            style="@style/MainTabItem"
+            android:text="三"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="3dp"
+            />
+
+        <RadioButton
+            android:id="@+id/home_tab_home4"
+            style="@style/MainTabItem"
+            android:text="四"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="3dp"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

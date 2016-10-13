@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.rilin.lzy.mybase.my.RecyclerUserActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#fff9ee"
+        android:dividerHeight="10dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_float_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/action_save"
+        app:backgroundTint="#ffb629"
+        app:layout_anchor="@+id/id_recyclerview"
+        app:layout_anchorGravity="bottom|right"
+        app:rippleColor="#FF7A6C"/>
+
+</android.support.design.widget.CoordinatorLayout>

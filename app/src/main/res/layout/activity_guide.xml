@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    tools:context=".my.lunbo.GuideActivity">
+
+    <com.rilin.lzy.mybase.widgets.GuideLinkageLayout
+        style="@style/MatchMatch">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_guide_background"
+            style="@style/MatchMatch"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="false"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="15dp"
+            app:banner_transitionEffect="fade"
+            app:banner_pointContainerBackground="@android:color/transparent"/>
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            style="@style/MatchMatch"
+            android:id="@+id/banner_guide_foreground"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="false"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="15dp"
+            app:banner_transitionEffect="alpha"
+            />
+
+    </com.rilin.lzy.mybase.widgets.GuideLinkageLayout>
+
+    <TextView
+        android:id="@+id/tv_guide_skip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:clickable="true"
+        android:text="跳过 >"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        style="@style/WrapWrap"
+        />
+
+    <Button
+        android:id="@+id/btn_guide_enter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/selector_btn_test"
+        android:text="进入主界面"
+        android:textColor="@android:color/white"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:visibility="gone"
+        tools:visibility="gone"
+        style="@style/WrapWrap"/>
+
+</RelativeLayout>

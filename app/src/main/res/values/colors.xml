@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+
+    <color name="home_bottom_white">#F8F8F8</color>
+    <color name="home_text_gray">#676767</color>
+    <color name="home_bg">#F3F3F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="title_bg">#4FD2C2</color>
+    <color name="title_bg_light">#66FDEC</color>
+    <color name="black">#000000</color>
+    <color name="c333">#333</color>
+    <color name="line_color">#999999</color>
+    <color name="gray_line">#C7C7C7</color>
+    <color name="red">#FF8686</color>
+    <color name="color_9b9b9b">#9B9B9B</color>
+    <color name="textcolor2">#656565</color>
+    <color name="Full_red">#FF0000</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="textcolor3">#333333</color>
+    <color name="ccc">#ccc</color>
+    <color name="text_red">#fd5a4b</color>
+    <color name="textcolor4">#b8b1a5</color>
+    <color name="textcolor5">#8f8f8f</color>
+    <color name="textcolor6">#A8A8AA</color>
+    <color name="inputbg">#EEFAFA</color>
+    <color name="textcolor7">#5b6423</color>
+    <color name="textcolor8">#1E1D23</color>
+    <color name="textcolor9">#878787</color>
+    <color name="c666">#666666</color>
+    <color name="background_this">#f4f4f4</color>
+    <color name="color_index_blue">#81B2FC</color>
+    <color name="transparent">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="item_bg_mid">#ff33b5e5</color>
+    <color name="item_bg_light">#ff6FCDF7</color>
+
+    <color name="text_color2">#37b9ff</color>
+    <color name="text_blue">#36B9FF</color>
+    <color name="text1">#3fabe5</color>
+    <color name="text2">#ff8841</color>
+    <color name="text3">#3ad299</color>
+    <color name="text_yellow">#ffda4d</color>
+    <color name="gray">#ff636363</color>
+    <color name="sky_blue">#ACEAE5</color>
+    <color name="weather_blue_1">#8AC3E1</color>
+    <color name="weather_blue_2">#719EB5</color>
+    <color name="green_province">#4FD2C2</color>
+    <color name="green_city">#5BE8D7</color>
+    <color name="green_area">#66FDEC</color>
+    <color name="color_535353">#535353</color>
+    <color name="color_505050">#505050</color>
+    <color name="orange">#FE721D</color>
+    <color name="maincolor">#37b9ff</color>
+    <color name="maincolors">#2a8fe3</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="theme_background">#56abe4</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Grey">#BEBEBE</color>
+    
+    <color name="holo_orange_light">#ffbb33</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="ziti">#ffb629</color>
+
+
+    <!--toolbar scrollview-->
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+</resources>

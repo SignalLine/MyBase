@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@color/white"
+                style="@style/CustomDialog111"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/clock_dialog_tag"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:singleLine="true"
+        android:text="闹钟"
+        android:textColor="#9a9a9a"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/clock_dialog_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:singleLine="true"
+        android:text="18:00"
+        android:layout_below="@+id/clock_dialog_tag"
+        android:textColor="#ff636363"
+        android:layout_marginBottom="20dp"
+        android:textSize="38sp" />
+
+    <TextView
+        android:id="@+id/clock_dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/clock_dialog_alarm"
+        android:background="#9a9a9a" />
+
+    <TextView
+        android:id="@+id/clock_dialog_ok"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fff5f5f5"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="确定"
+        android:layout_below="@+id/clock_dialog_line"
+        android:textColor="#56abe4"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

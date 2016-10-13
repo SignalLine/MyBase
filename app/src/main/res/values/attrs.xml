@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!-- 圆角ImageView -->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+    
+    <!-- 虚线 -->
+    <declare-styleable name="DottedLine">
+        <attr name="lineColor" format="color" />
+        <attr name="isLine" format="boolean"/>
+    </declare-styleable>
+
+    <!-- backHeaderView -->
+    <declare-styleable name="headerView">
+        <attr name="left_text" format="string" />
+        <attr name="left_drawable" format="reference" />
+        <attr name="left_color" format="color" />
+        <attr name="middle_text" format="string" />
+        <attr name="middle_color" format="color" />
+        <attr name="right_text" format="string" />
+        <attr name="right_drawable" format="reference" />
+        <attr name="right_color" format="color" />
+        <attr name="background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageCircleView">
+
+
+        <attr name="border_width1" format="dimension" />
+        <attr name="border_color1" format="color" />
+    </declare-styleable>
+    
+    <!--<declare-styleable name="ebuyView">-->
+        <!--<attr name="title_bg" format="reference" />-->
+    <!--</declare-styleable>-->
+    <!-- -->
+    <!--<declare-styleable name="normalView">-->
+        <!--<attr name="title" format="reference" />-->
+        <!--<attr name="left" format="reference" />-->
+        <!--<attr name="right" format="reference" />-->
+    <!--</declare-styleable>-->
+
+</resources>

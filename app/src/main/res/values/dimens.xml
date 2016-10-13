@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="index_bar_view_text_size">12sp</dimen>
+    <dimen name="index_bar_view_width">20dp</dimen>
+    <dimen name="index_bar_view_margin">0dp</dimen>
+    <dimen name="index_bar_view_margin_top">15dp</dimen>
+    <dimen name="back_text_size">15sp</dimen>
+
+
+    <dimen name="margin_standard">16dp</dimen>
+    <dimen name="flexible_space_image_height">240dp</dimen>
+    <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+    <dimen name="parallax_image_height">180dp</dimen>
+
+
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_38">38sp</dimen>
+    <dimen name="text_size_48">48sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+
+    <dimen name="title_bar_height">44.0dip</dimen>
+    <dimen name="head_size">28.0dip</dimen>
+    <dimen name="home_menu_margin_5">5dip</dimen>
+    <dimen name="home_menu_margin_6">6dip</dimen>
+    <dimen name="home_menu_margin_7">7dip</dimen>
+    <dimen name="home_menu_margin_8">8dip</dimen>
+    <dimen name="margin_10">10dip</dimen>
+    <dimen name="margin_15">15dip</dimen>
+    <dimen name="margin_20">20dip</dimen>
+    <dimen name="margin_25">25dip</dimen>
+    <dimen name="margin_35">35dip</dimen>
+    <dimen name="margin_46">46dip</dimen>
+    <dimen name="margin_76">76dip</dimen>
+    <dimen name="margin_86">86dip</dimen>
+    <dimen name="height_38">38dip</dimen>
+    <dimen name="height_48">48dip</dimen>
+    <dimen name="height_58">58dip</dimen>
+    <dimen name="height_68">68dip</dimen>
+</resources>

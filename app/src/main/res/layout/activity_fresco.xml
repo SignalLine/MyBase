@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.rilin.lzy.mybase.my.FrescoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+        <!-- 必须设置width和height属性,才能正确加载图片,不支持wrap_content属性 -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"/>
+
+        <!--actualImageScaleType实际图片缩放类型
+            progressBarImage正在加载图片缩放
+            progressBarAutoRotateInterval正在加载图自动旋转间隔时间,直到图片加载完成
+        -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@mipmap/icon_failure"
+
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="实例无加载"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="加载图片"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="带加载进度"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+        <!-- 必须设置width和height属性,才能正确加载图片,不支持wrap_content属性 -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@mipmap/icon_failure"
+
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+
+            fresco:retryImage="@mipmap/icon_retry"
+            fresco:retryImageScaleType="centerCrop"
+            />
+
+        <!--
+            fresco:fadeDuration="5000" 淡入淡出动画持续时间
+        -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="5000"
+
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+            fresco:placeholderImageScaleType="fitCenter"
+
+            fresco:progressBarAutoRotateInterval="5000"
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+
+            fresco:progressBarImageScaleType="centerInside"
+            fresco:retryImage="@mipmap/icon_retry"
+
+            fresco:retryImageScaleType="centerCrop"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@color/holo_orange_light"
+
+            fresco:fadeDuration="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+
+            fresco:retryImage="@mipmap/icon_retry"
+            fresco:retryImageScaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="带重试按钮"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="淡入淡出效果"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="带背景图效果"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <!--
+            按压状态下显示叠加图
+            fresco:pressedStateOverlayImage="@color/green_area"
+            叠加图
+            fresco:overlayImage="@color/bgColor_overlay_black"
+        -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@color/holo_orange_light"
+
+            fresco:fadeDuration="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+
+            fresco:retryImage="@mipmap/icon_retry"
+            fresco:retryImageScaleType="centerCrop"
+
+            fresco:pressedStateOverlayImage="@color/green_area"
+            fresco:overlayImage="@color/bgColor_overlay_black"
+            />
+
+        <!--fresco:roundAsCircle="true" 是否是圆形图-->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@color/holo_orange_light"
+
+            fresco:fadeDuration="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+
+            fresco:retryImage="@mipmap/icon_retry"
+            fresco:retryImageScaleType="centerCrop"
+
+            fresco:roundAsCircle="true"
+            />
+
+        <!--
+            fresco:roundedCornerRadius="20dp" 设置圆角半径
+            fresco:roundTopLeft="true"   左上角是否是圆形
+            fresco:roundTopRight="true"  右上角是否是圆形
+            fresco:roundBottomLeft="true" 左下角是否是圆形
+            fresco:roundBottomRight="true" 右下角是否是圆形
+
+            如果同时设置系统圆形和圆角 只会显示圆形图像
+        -->
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/fresco_sdv_9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@color/holo_orange_light"
+
+            fresco:fadeDuration="5000"
+            fresco:failureImage="@mipmap/icon_failure"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/icon_placeholder"
+
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:progressBarAutoRotateInterval="5000"
+
+            fresco:progressBarImage="@mipmap/icon_progress_bar"
+            fresco:progressBarImageScaleType="centerInside"
+
+            fresco:retryImage="@mipmap/icon_retry"
+            fresco:retryImageScaleType="centerCrop"
+
+            fresco:roundedCornerRadius="20dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="false"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="按压显示叠加图"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="显示圆形图"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="显示圆角图像"/>
+    </LinearLayout>
+
+</LinearLayout>

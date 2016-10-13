@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="goole_colors">
+        <item name="gray">#BEBEBE</item>
+        <item name="text_color2">#37b9ff</item>
+        <item name="text_blue">#36B9FF</item>
+        <item name="text1">#3fabe5</item>
+        <item name="text2">#ff8841</item>
+        <item name="text3">#3ad299</item>
+        <item name="text_yellow">#ffda4d</item>
+        <item name="gray">#ff636363</item>
+    </array>
+</resources>
