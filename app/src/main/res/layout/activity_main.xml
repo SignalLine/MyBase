@@ -17,159 +17,157 @@
         android:scrollbars="none"
         >
 
-        <LinearLayout
+        <com.rilin.lzy.mybase.view.FlowLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+            android:layout_height="match_parent">
             <Button
                 android:id="@+id/main_btn_1"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ScrollView"
                 />
 
             <Button
                 android:id="@+id/main_btn_2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PinnerListView"
                 />
 
             <Button
                 android:id="@+id/main_btn_3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ButtomSheet"
                 />
 
             <Button
                 android:id="@+id/main_btn_4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="仿微信UI图片选择器"
                 />
 
             <Button
                 android:id="@+id/main_btn_5"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="简单带删除按钮的输入框登录页面"
                 />
 
             <Button
                 android:id="@+id/main_btn_6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="fresco的使用"
                 />
             <Button
                 android:id="@+id/main_btn_7"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="getbase.floatActionButton的使用"
                 />
             <Button
                 android:id="@+id/main_btn_8"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="用户信息ListView"
                 />
 
             <Button
                 android:id="@+id/main_btn_9"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="动态RecyclerView显示用户信息"
                 />
 
             <Button
                 android:id="@+id/main_btn_10"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="notification通知"
                 />
 
             <Button
                 android:id="@+id/main_btn_11"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DatePicker日历选择器"
                 />
 
             <Button
                 android:id="@+id/main_btn_12"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CircleMenu菜单"
                 />
 
             <Button
                 android:id="@+id/main_btn_13"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Alarm定时提醒"
                 />
 
             <Button
                 android:id="@+id/main_btn_14"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="基本的Fragment页面切换"
                 />
 
             <Button
                 android:id="@+id/main_btn_15"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="observableScrollview"
                 />
 
             <Button
                 android:id="@+id/main_btn_16"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ParallaxToolbarScrollview"
                 />
 
             <Button
                 android:id="@+id/main_btn_17"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="二级联动Popupwindow"
                 />
 
             <Button
                 android:id="@+id/main_btn_18"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="仿win8的进度条展示"
                 />
 
             <Button
                 android:id="@+id/main_btn_19"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="模拟心率波形图"
                 />
 
             <Button
                 android:id="@+id/main_btn_20"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="监听网络状态"
                 />
 
             <Button
                 android:id="@+id/main_btn_21"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="观察者模式"
                 />
 
             <Button
                 android:id="@+id/main_btn_22"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="vitamio网络电视直播"
                 android:visibility="gone"
@@ -177,42 +175,42 @@
 
             <Button
                 android:id="@+id/main_btn_23"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="引导页"
                 />
 
             <Button
                 android:id="@+id/main_btn_24"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="各种轮播图样式"
                 />
 
             <Button
                 android:id="@+id/main_btn_25"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GreenDao数据库框架使用"
                 />
 
             <Button
                 android:id="@+id/main_btn_26"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="定时闹钟提醒"
                 />
 
             <Button
                 android:id="@+id/main_btn_27"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="手势draggableGridView"
                 />
 
             <Button
                 android:id="@+id/main_btn_28"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="录音播放暂停"
                 />
@@ -220,7 +218,7 @@
             <Button
                 android:id="@+id/main_btn_29"
                 android:visibility="gone"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="指南针"
                 />
@@ -228,14 +226,11 @@
             <Button
                 android:id="@+id/main_btn_30"
                 android:visibility="gone"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="软件版本检测更新"
                 />
-
-
-        </LinearLayout>
-
+        </com.rilin.lzy.mybase.view.FlowLayout>
 
     </com.rilin.lzy.mybase.widgets.UserDefineScrollView>
 </LinearLayout>
