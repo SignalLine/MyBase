@@ -23,6 +23,32 @@ public class SPUtils {
     public static final String FILE_NAME2 = "TEL";
 
     /**
+     * 设置皮肤颜色----test
+     *
+     * @param context
+     * @param mode_key
+     */
+    public static void setColor(Context context,boolean mode_key){
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME,
+                Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putBoolean("mode_key", mode_key);
+        SharedPreferencesCompat.apply(editor);
+    }
+
+    /**
+     * 获取颜色---默认为true
+     *
+     * @param context
+     * @return
+     */
+    public static boolean getColor(Context context){
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME,
+                Context.MODE_PRIVATE);
+        return sp.getBoolean("mode_key", true);
+    }
+
+    /**
      * 保存数据的方法，我们需要拿到保存数据的具体类型，然后根据类型调用不同的保存方法
      *
      * @param context
@@ -98,7 +124,7 @@ public class SPUtils {
         SharedPreferencesCompat.apply(editor);
     }
     public static String getName(Context context){
-        SharedPreferences sp = context.getSharedPreferences(FILE_NAME2,
+        SharedPreferences sp = context.getSharedPreferences(FILE_NAME,
                 Context.MODE_PRIVATE);
 
         return sp.getString("username", "");

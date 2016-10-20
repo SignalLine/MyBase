@@ -458,6 +458,8 @@
         </activity>
         <activity android:name=".my.UpdateAppActivity">
         </activity>
+        <activity android:name=".my.ThreeDActivity">
+        </activity>
     </application>
 
 </manifest>

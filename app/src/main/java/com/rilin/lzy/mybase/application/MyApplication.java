@@ -8,6 +8,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.rilin.lzy.mybase.model.Engine;
 import com.rilin.lzy.mybase.model.ProvinceView;
 import com.rilin.lzy.mybase.util.FileUtils;
+import com.rilin.lzy.mybase.util.SPUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,8 +75,6 @@ public class MyApplication extends Application {
 //        ImageLoader.getInstance().init(configuration);
 
         setIP(IPNUMBER);
-
-
         //第二个参数是appkey，就是百川应用创建时候的appkey
 //        FeedbackAPI.initAnnoy(this, "23343188");
 

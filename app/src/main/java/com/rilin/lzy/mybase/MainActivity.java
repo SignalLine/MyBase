@@ -1,12 +1,15 @@
 package com.rilin.lzy.mybase;
 
 
+import android.graphics.Color;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.Button;
 
 import com.rilin.lzy.mybase.activity.BaseActivity;
 import com.rilin.lzy.mybase.my.CompassActivity;
 import com.rilin.lzy.mybase.my.DraggActivity;
+import com.rilin.lzy.mybase.my.ThreeDActivity;
 import com.rilin.lzy.mybase.my.UpdateAppActivity;
 import com.rilin.lzy.mybase.my.VoiceActivity;
 import com.rilin.lzy.mybase.my.alarm_timer.AlarmActivity;
@@ -35,9 +38,12 @@ import com.rilin.lzy.mybase.my.SimpleLoginActivity;
 import com.rilin.lzy.mybase.my.UserInfoListActivity;
 import com.rilin.lzy.mybase.my.Win8ProActivity;
 import com.rilin.lzy.mybase.my.tv_vitamio.TVHomeActivity;
+import com.rilin.lzy.mybase.util.L;
+import com.rilin.lzy.mybase.util.SPUtils;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
+    private static final java.lang.String TAG = MainActivity.class.getSimpleName();
     private Button mButton,mButton2,mButton3,
                 mButton4,mButton5,mButton6,
                 mButton7,mButton8,mButton9,
@@ -47,7 +53,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 mButton19,mButton20,mButton21,
                 mButton22,mButton23,mButton24,
                 mButton25,mButton26,mButton27,
-                mButton28,mButton29,mButton30;
+                mButton28,mButton29,mButton30,
+                mButtonChange,mButton31;
 
 
     @Override
@@ -87,6 +94,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mButton28 = getView(R.id.main_btn_28);
         mButton29 = getView(R.id.main_btn_29);
         mButton30 = getView(R.id.main_btn_30);
+        mButton31 = getView(R.id.main_btn_31);
+
+        mButtonChange = getView(R.id.main_change_color);
     }
 
 
@@ -123,6 +133,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mButton28.setOnClickListener(this);
         mButton29.setOnClickListener(this);
         mButton30.setOnClickListener(this);
+        mButton31.setOnClickListener(this);
+
+        mButtonChange.setOnClickListener(this);
+
     }
 
     @Override
@@ -229,10 +243,42 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 case R.id.main_btn_30://版本检测更新
                     startActivity(UpdateAppActivity.class);
                     break;
+                case R.id.main_change_color://换肤
+                    switchNightMode();
+                    break;
+                case R.id.main_btn_31://3D画廊效果
+                    startActivity(ThreeDActivity.class);
+                    break;
                 default:
                     break;
             }
         }
+    }
+
+    /**
+     * 切换日间夜间状态
+     */
+    private void switchNightMode() {
+        boolean color = SPUtils.getColor(getApplicationContext());
+        L.i(TAG,"-------------color----->>>" + color);
+        if(!color){
+            mButtonChange.setBackgroundColor(Color.WHITE);
+            mButtonChange.setTextColor(Color.BLACK);
+            mButtonChange.setText("日间皮肤");
+
+            // 日间模式
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            SPUtils.setColor(getApplicationContext(),true);
+        }else {
+            mButtonChange.setBackgroundColor(Color.BLACK);
+            mButtonChange.setTextColor(Color.WHITE);
+            mButtonChange.setText("夜间皮肤");
+
+            // 夜间皮肤
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            SPUtils.setColor(getApplicationContext(),false);
+        }
+        recreate();
     }
 }
 

@@ -20,6 +20,21 @@
         <com.rilin.lzy.mybase.view.FlowLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/main_change_color"
+                android:text="日间皮肤"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/main_btn_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="viewPager3D画廊效果"
+                />
+
             <Button
                 android:id="@+id/main_btn_1"
                 android:layout_width="wrap_content"
@@ -230,6 +245,7 @@
                 android:layout_height="wrap_content"
                 android:text="软件版本检测更新"
                 />
+
         </com.rilin.lzy.mybase.view.FlowLayout>
 
     </com.rilin.lzy.mybase.widgets.UserDefineScrollView>
